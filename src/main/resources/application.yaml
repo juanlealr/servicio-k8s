@@ -1,3 +1,6 @@
 spring:
   application:
     name: servicio-k8s
+
+app:
+  integrantes: "Juan Camilo Leal, Duvan Camilo Hernandez, William Javier Huertas"
