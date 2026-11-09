@@ -5,17 +5,16 @@ import java.util.List;
 public class ContainerInfoResponseDTO {
     private String horaContenedor;
     private List<String> integrantes;
+    private String profesor;
     private String idContenedor;
     private String almacenamientoContenedor;
     private String ramContenedor;
 
-    public ContainerInfoResponseDTO() {
-    }
-
-    public ContainerInfoResponseDTO(String horaContenedor, List<String> integrantes, String idContenedor,
-            String almacenamientoContenedor, String ramContenedor) {
+    public ContainerInfoResponseDTO(String horaContenedor, List<String> integrantes, String profesor,
+            String idContenedor, String almacenamientoContenedor, String ramContenedor) {
         this.horaContenedor = horaContenedor;
         this.integrantes = integrantes;
+        this.profesor = profesor;
         this.idContenedor = idContenedor;
         this.almacenamientoContenedor = almacenamientoContenedor;
         this.ramContenedor = ramContenedor;
@@ -59,5 +58,13 @@ public class ContainerInfoResponseDTO {
 
     public void setRamContenedor(String ramContenedor) {
         this.ramContenedor = ramContenedor;
+    }
+
+    public String getProfesor() {
+        return profesor;
+    }
+
+    public void setProfesor(String profesor) {
+        this.profesor = profesor;
     }
 }
